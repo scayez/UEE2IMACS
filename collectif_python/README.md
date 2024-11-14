@@ -1,0 +1,2 @@
+Dans ce cours, vous apprendrez les bases du langage python (variables, structures de données, boucles…) dans un premier temps. Ces notions vous permettront rapidement d’apprendre à manipuler les bibliothèques indispensables à la science des données que sont Matplotlib, Numpy, Scipy, Pandas. 
+Ceci vous permettra de manipuler les fichiers de données, de les explorer, les visualiser et donc de vous approprier le langage pour l’appliquer à nos métiers de la physique / électricité / électronique.
