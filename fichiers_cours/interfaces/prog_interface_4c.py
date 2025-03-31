@@ -3,14 +3,8 @@ from PyQt5 import   QtWidgets, uic
 from PyQt5.QtWidgets import QFileDialog
 import pandas as pd
 
-try:
-    qtCreatorFile = "fichiers_cours/interfaces/mon_interface2.ui" # Essayer d'ouvrir ce fichier.
-    with open(qtCreatorFile):
-        pass  # Si le fichier existe, ne rien faire.
-except FileNotFoundError:
-    qtCreatorFile = "mon_interface2.ui"  # Si le fichier n'existe pas, utiliser un chemin de secours.
+qtCreatorFile = "mon_interface2.ui"  # Si le fichier n'existe pas, utiliser un chemin de secours.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
-
 
 class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
