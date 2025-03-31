@@ -12,7 +12,7 @@ try:
         pass  # Si le fichier existe, ne rien faire.
 except FileNotFoundError:
     qtCreatorFile = "mon_interface8.ui"  # Si le fichier n'existe pas, utiliser un chemin de secours. 
-    Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
+Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
 class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -31,7 +31,7 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setWindowTitle("Mon Premier Programme Avec Interface")
                 
         # Ajouter une icône à la fenêtre
-        icon = QtGui.QIcon("mon_icone.png")  # Spécifiez le chemin vers l'icône
+        icon = QtGui.QIcon("mon_icone.png")
         self.setWindowIcon(icon)
 
     def quit(self):   
